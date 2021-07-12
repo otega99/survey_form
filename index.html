@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - survey_form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description"><i>Please fill in the fields below</i></p>
+  <form id="survey-form">
+      <label for="name" id="name-label">
+        Name
+      </label>
+    <br>
+    <input id="name" class="form-control" type="text" placeholder="Enter your name" required>
+    <br>
+      <label for="email" id="email-label">
+        Email
+      </label>
+     <br>
+   <input id="email" class="form-control"  type="email" placeholder="Enter your email" required>
+    <br>
+     <label for="number" id="number-label">
+       Age (optional)
+     </label>
+     <br>
+   <input id="number" class="form-control" type="number" min="0" max="100" placeholder="Age"/>
+ <br>
+    <label for="dropdown">
+      What is your level of education?
+    </label>
+     <br>
+    <select id="dropdown" class="form-control">
+        <option value="" disabled selected>Prefer not to say</option>
+      <option value="" disabled hidden>Select current level</option>
+      <option value="undergrad">Undergraduate</option>
+       <option value="masters">Postgraduate(Masters)</option>
+       <option value="phd">Postgraduate(PhD)</option>
+    </select>
+    <br>
+    <label>Would you recommend this service to a friend?</label>
+    <br>
+     <input type="radio" id="definitely" value="definitely" name="response">
+     <label for="definitely">
+       Definitely
+     </label>
+      <br>
+    <input type="radio" id="maybe" value="maybe" name="response">
+        <label for="maybe">Maybe</label>
+    <br>
+     <input type="radio" id="not_sure" value="not_sure" name="response">
+     <label for="not_sure">Not Sure</label>
+      <br>
+    <label>What fields are you interested in? (Check all that apply?)</label>
+    <br>
+    <input type="checkbox" id="physics" name="interests" value="physics">
+    <label for="physics">Physics</label>
+    <br>
+      <input type="checkbox" id="engineering" name="interests" value="engineering">
+    <label for="engineering">Engineering</label>
+    <br>
+    <input type="checkbox" id="compsci" name="interests" value="compsci">
+    <label for="compsci">Computer Science</label>
+    <br>
+      <input type="checkbox" id="biotech" name="interests" value="biotech">
+    <label for="biotech">Biotech</label>
+    <br>
+      <input type="checkbox" id="matsci" name="interests" value="matsci">
+    <label for="matsci">Material Science</label>
+    <br>
+    <label>Any comments or suggestions?</label>
+    <br>
+    <textarea placeholder="Enter your comments here"></textarea>
+     <br>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
